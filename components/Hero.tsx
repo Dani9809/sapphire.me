@@ -20,20 +20,22 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-2xl text-accent mb-8">
           Passionate BPO Professional & Team Leader
         </p>
-        <div className="space-x-4">
+        {/* --- CHANGES ARE HERE --- */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <button
             onClick={scrollToProjects}
-            className="bg-accent text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-400 transition-transform duration-300 transform hover:scale-105"
+            className="w-full sm:w-auto bg-accent text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-400 transition-transform duration-300 transform hover:scale-105"
           >
             Explore My Journey
           </button>
           <button
             onClick={scrollToContact}
-            className="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105"
+            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105"
           >
             Let's Connect
           </button>
         </div>
+        {/* --- END OF CHANGES --- */}
       </div>
     </section>
   );
