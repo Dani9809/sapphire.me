@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <div className="md:col-span-2 animate-slide-in-left">
           <div className="p-2 bg-gradient-to-tr from-accent to-primary rounded-lg shadow-2xl">
             <img 
-              src="public/profile.jpg" 
+              src="/profile.jpg" 
               alt="Professional Portrait of Rowena Morales" 
               className="rounded-lg w-full h-auto object-cover"
             />

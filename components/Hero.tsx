@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{backgroundImage: "url('public/hero-background.png')"}}>
+    <section id="home" className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style={{backgroundImage: "url('/hero-background.png')"}}>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 text-center text-white p-4 animate-fade-in-up">
         <h2 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
