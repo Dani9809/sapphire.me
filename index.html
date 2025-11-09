@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowena Morales | BPO Professional Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-              georgia: ['Georgia', 'serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <title>Rowena Morales | BPO Professional Portfolio</title>
+  <meta name="title" content="Rowena Morales | BPO Professional Portfolio" />
+  <meta name="description"
+    content="Explore the portfolio of Rowena Morales, a passionate BPO Professional & Team Leader with 9+ years of experience in customer service, team management, and talent acquisition." />
+  <meta name="author" content="Rowena Morales" />
+  <meta name="keywords"
+    content="Rowena Morales, BPO, Team Leader, Customer Service, Portfolio, BPO Professional, Talent Acquisition, Call Center" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="YOUR_WEBSITE_URL" />
+  <meta property="og:title" content="Rowena Morales | BPO Professional Portfolio" />
+  <meta property="og:description" content="Passionate BPO Professional & Team Leader with 9+ years of experience." />
+  <meta property="og:image" content="/profile.jpg" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="YOUR_WEBSITE_URL" />
+  <meta property="twitter:title" content="Rowena Morales | BPO Professional Portfolio" />
+  <meta property="twitter:description"
+    content="Passionate BPO Professional & Team Leader with 9+ years of experience." />
+  <meta property="twitter:image" content="/profile.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            georgia: ['Georgia', 'serif'],
+          },
+          colors: {
+            'primary': '#0D47A1', // A deep, professional blue
+            'secondary': '#1565C0',
+            'accent': '#42A5F5',
+            'light-bg': '#F5F7FA',
+            'dark-bg': '#121212',
+            'light-text': '#1F2937',
+            'dark-text': '#E5E7EB',
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+            'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
             },
-            colors: {
-              'primary': '#0D47A1', // A deep, professional blue
-              'secondary': '#1565C0',
-              'accent': '#42A5F5',
-              'light-bg': '#F5F7FA',
-              'dark-bg': '#121212',
-              'light-text': '#1F2937',
-              'dark-text': '#E5E7EB',
+            slideInLeft: {
+              '0%': { opacity: 0, transform: 'translateX(-30px)' },
+              '100%': { opacity: 1, transform: 'translateX(0)' },
             },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
-              'slide-in-right': 'slideInRight 0.8s ease-out forwards',
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: 0, transform: 'translateY(20px)' },
-                '100%': { opacity: 1, transform: 'translateY(0)' },
-              },
-              slideInLeft: {
-                '0%': { opacity: 0, transform: 'translateX(-30px)' },
-                '100%': { opacity: 1, transform: 'translateX(0)' },
-              },
-              slideInRight: {
-                '0%': { opacity: 0, transform: 'translateX(30px)' },
-                '100%': { opacity: 1, transform: 'translateX(0)' },
-              }
+            slideInRight: {
+              '0%': { opacity: 0, transform: 'translateX(30px)' },
+              '100%': { opacity: 1, transform: 'translateX(0)' },
             }
           }
         }
       }
-    </script>
+    }
+  </script>
   <script type="importmap">
 {
   "imports": {
@@ -59,10 +84,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300">
-    <div id="root"></div>
+
+<body class="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
