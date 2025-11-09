@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
       <div className="container mx-auto px-6 py-4 text-center text-gray-500 dark:text-gray-400">
         <p>&copy; {new Date().getFullYear()} Rowena Morales. All Rights Reserved.</p>
-        <p className="text-sm mt-1">Built with React & Tailwind CSS</p>
+        <p className="text-sm mt-1">Build by <a href="https://moniva.site" target="_blank" rel="noopener noreferrer">Moniva Site</a></p>
       </div>
     </footer>
   );
